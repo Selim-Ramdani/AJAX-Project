@@ -4,14 +4,10 @@ class TodosController < ApplicationController
   end
 
   def create
-    @todo = Todo.new(todo_params)
-    
-    if @todo.save
-      flash[:alert] = "La tâche a bien été enregistrée !"
-    else
-      flash[:alert] = "Il y a un petit problème"
-      render('new')
-      puts @todo.errors.full_message
+    @todo = Todo.create(todo_params)
+    respond_to do |format|
+      format.html { redirect_to todos_path }
+      format.js {}
     end
   end
 

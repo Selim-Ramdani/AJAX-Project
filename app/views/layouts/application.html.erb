@@ -14,7 +14,6 @@
 
     <%= stylesheet_link_tag 'bootstrap', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'bootstrap', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'https://kit.fontawesome.com/0362a8ae65.js' %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
@@ -22,6 +21,11 @@
   </head>
 
   <body>
+
+  <%= render 'layouts/shared/navbar' %>
+  
     <%= yield %>
+
   </body>
+
 </html>

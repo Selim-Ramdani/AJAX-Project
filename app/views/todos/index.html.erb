@@ -1,4 +1,16 @@
 <h1>La page "To Do" avec la liste des tâches et formulaire de création</h1>
 
-# Le formulaire de création d'une tâche =>
-<%= render 'layouts/todo_form' %>
+<% @todos.each do |todo| %>
+  <%= todo.title %> <%= todo.description %>
+<% end %>
+
+<%= form_tag(todos_path, method: :post, class: "form", remote: true) do %>
+  <div class="form-task">
+    <label for="Title">Titre de la tâche</label>
+    <%= text_field_tag 'title' %>
+    <label for="Description">Description de la tâche</label>
+    <%= text_field_tag 'description' %>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+<% end %>
