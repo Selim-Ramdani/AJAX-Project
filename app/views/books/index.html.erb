@@ -1,0 +1,26 @@
+<h1>Book#index</h1>
+
+# La boucle .each pour ressortir les bouquins =>
+<ul id="book-list">
+  <% @books.each do |book| %>
+    <li>"<%= book.title %>" par <b><%= book.author %></br></li>
+  <% end %>
+</ul>
+
+# Le formulaire =>
+
+<div class="form">
+  <%= form_tag(books_path, method: :post, class: "form", remote: true) do %>
+    <label for="title">Title
+    <%= text_field_tag  :title %>
+
+    <label for="author">author
+    <%= text_field_tag  :author %>
+
+    <%= submit_tag 'create', :name => 'commit'%>
+  <% end %>
+</div>
+
+# => Lien vers la page "To Do" =>
+
+<%= link_to 'To Do', todos_path %>
