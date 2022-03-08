@@ -20,6 +20,13 @@
    box-sizing: border-box;
  }
 
+html, body {
+  height:100%;
+}
+body {
+margin: 0;
+}
+
  .div-links{
    padding-bottom: 40px;
  }
@@ -35,3 +42,26 @@
    font-weight: bold;
    font-family: poppins;
  }
+
+ .container-fluid {
+  height: 100%;
+}
+
+.row {
+height: 100%; 
+}
+
+
+.col-md-6 {
+float:left;
+width: 50%;
+min-height: 100%;
+}
+
+.left {
+background-color: #dbdbdb;
+}
+
+.right {
+background-color: #1D1D1D;
+}
