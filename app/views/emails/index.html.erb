@@ -1,12 +1,14 @@
-<h1>Recevoir un email</h1>
-
+<h1><%= link_to "Recevoir un email", emails_path, method: "post", class: "btn btn-menu" %></h1>
 <div class="container-fluid">
 
  <div class="row">
 
     <div class="col-md-6 left">La liste des emails :
+      <% @emails.each do |email| %>
+        <%= email.object %>
+        <%= email.body %>
+      <% end %>
     </div>
-
     <div class="col-md-6 right">Email sélectionné
     </div>
  </div>

@@ -9,3 +9,10 @@
 5.times do 
   Book.create(author: Faker::Book.author, title: Faker::Book.title)
 end
+
+5.times do
+  Email.create(
+    body: Faker::Lorem.paragraph,
+    object: Faker::Book.title
+    )
+end
