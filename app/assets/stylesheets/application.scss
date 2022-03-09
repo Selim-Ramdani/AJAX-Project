@@ -43,25 +43,16 @@ margin: 0;
    font-family: poppins;
  }
 
- .container-fluid {
-  height: 100%;
+.container-fluid{
+  width: 100%;
+  justify-content: space-around;
+  display: flex;
 }
 
-.row {
-height: 100%; 
+.email-left{
+  width: 40%;
 }
 
-
-.col-md-6 {
-float:left;
-width: 50%;
-min-height: 100%;
-}
-
-.left {
-background-color: #dbdbdb;
-}
-
-.right {
-background-color: #1D1D1D;
+.body-right{
+  width: 100%;
 }

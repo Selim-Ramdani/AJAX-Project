@@ -5,11 +5,11 @@ class EmailsController < ApplicationController
   end
 
   def create
-    @email = Email.new(body: Faker::Lorem.paragraph, object: Faker::Book.title)
-    if @email.save
-      flash[:alert] = "L'email a bien été créé en base de donnée :=)"
-    else
-      redirect_to 'root_path'
+    @email = Email.create(body: Faker::Lorem.paragraph, object: Faker::Book.title)
+    @email.save
+    respond_to do |format|
+      format.html { redirect_to books_path }
+      format.js {}
     end
   end
 
