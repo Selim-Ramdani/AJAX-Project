@@ -1,0 +1,6 @@
+if (document.querySelector("#email-body").textContent !== "") {
+  document.querySelector("#email-body").textContent = ""
+}
+
+document.querySelector("#email-body").insertAdjacentHTML("beforeend", "<%= j render 'show', email: @email %>");
+document.querySelector('.remove-<%= @email.id %>').style.color = "black";

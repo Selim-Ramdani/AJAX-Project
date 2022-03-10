@@ -1,14 +1,23 @@
-<%= link_to 'Recevoir un email', emails_path, method: "post", class: "btn btn_primary", remote: true %>
+<div class="container px-5 mb-5">
+  <div class="text-center"><%= link_to "Recevoir un email", emails_path, class: "btn btn-primary", :method => 'POST', remote: true %></div>
 
- <div class="container-fluid">
-    <div class="email-left">La liste des emails :
-      <ul id="email-list">
-        <% @emails.each do |email| %>
+  <div class="row mx-lg-n5 mt-4">
+    <div class="col py-3 px-lg-5 border bg-light">
+      <h3>Liste des emails</h3>
+      <ul id="email-new">
+        <% @emails.each do |email|  %>
+            <a href='<%= email_path(email) %>' data-remote= 'true' >
+            <li class='remove-<%= email.id %>'</li> 
+            <%= email.object %>
+            </a>
         <% end %>
       </ul>
     </div>
 
-    <div class="body-right">Email sélectionné
+    <div class="col py-3 px-lg-5 border bg-light">
+      <h3>Email sélectionné</h3>
+      <div id="email-body"></div>
     </div>
+    
+  </div>
 </div>
-

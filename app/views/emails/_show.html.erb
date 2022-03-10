@@ -1,0 +1,4 @@
+  <p>Object : <%= @email.object %></p>
+  <p>Body:</p>
+  <%= @email.body %>
+  <%= link_to "Supprimer", email_path(email), :class => "btn btn-primary", :method => 'DELETE', remote: true %>

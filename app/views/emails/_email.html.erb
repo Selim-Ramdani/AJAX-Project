@@ -1,2 +1,5 @@
-<li>"<%= email.object %>"<b><%= email.body %></br></li>
-<%= link_to @email.object, email_path(@email), remote: true %>
+<a href='<%= email_path(email) %>' data-remote= 'true' >
+  <li class='remove-<%= email.id %>'>
+      <%= email.object %>
+  </li>
+</a>
