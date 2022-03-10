@@ -18,18 +18,22 @@
    margin: 0;
    padding: 0;
    box-sizing: border-box;
+   font-family: roboto;
  }
 
 html, body {
   height:100%;
 }
+
 body {
 margin: 0;
 }
 
  .div-links{
+   letter-spacing: 1px;
    padding-bottom: 40px;
  }
+
  .navbar{
    margin-top: 0;
    width: 100%;
@@ -41,6 +45,12 @@ margin: 0;
    text-align: center;
    font-weight: bold;
    font-family: poppins;
+ }
+
+ h3{
+   text-align: center;
+   padding-bottom: 15px;
+   font-family: montserrat;
  }
 
 .container-fluid{
