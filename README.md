@@ -1,6 +1,10 @@
 # AJAX-Project
 Application créée dans le cadre d'un projet de bootcamp chez The Hacking Project. L'objectif était principalement de découvrir l'AJAX qui permet de faire des appels à la base de données sans rafraichir la page web.
 
+
+![Cover](https://www.zupimages.net/up/22/40/8db6.png)
+
+
 ## WEB version 🌐
 
 L'application est en production ici 👉 [AjaxProject](https://ajaxpr0ject.herokuapp.com/emails)
