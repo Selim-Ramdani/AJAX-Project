@@ -1,48 +1,15 @@
-<h1 align="center">Hi 👋, I'm @curlyroots</h1>
-<h3 align="center">A passionate student developper</h3>
+# AJAX-Project
+Application créée dans le cadre d'un projet de bootcamp chez The Hacking Project. L'objectif était principalement de découvrir l'AJAX qui permet de faire des appels à la base de données sans rafraichir la page web.
 
-<p align="left"> <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a> <a href="https://www.linux.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/> </a> <a href="https://www.postgresql.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" alt="postgresql" width="40" height="40"/> </a> <a href="https://rubyonrails.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/rails/rails-original-wordmark.svg" alt="rails" width="40" height="40"/> </a> <a href="https://www.ruby-lang.org/en/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/ruby/ruby-original.svg" alt="ruby" width="40" height="40"/> </a> </p>
+## WEB version 🌐
 
+L'application est en production ici 👉 [AjaxProject](https://ajaxpr0ject.herokuapp.com/emails)
 
-### AjaxPr0ject est en production sur Heroku => https://ajaxpr0ject.herokuapp.com/
+## Technologies utilisées ⚙️
+![Rails](https://img.shields.io/badge/Ruby_on_Rails-CC0000?style=for-the-badge&logo=ruby-on-rails&logoColor=white)
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 
-
-## 🛠️ Installation Steps
-
-
-1. Clone the repository
-
-```bash
-https://github.com/curlyroots/Eventbrite_app
-```
-
-2. Bundle install
-
-```bash
-if good, follow-up,
-  else
-retry yourself
-```
-
-3. rails:db:migrate
-
-```bash
-if good, follow-up
-  else
-retry yourself
-```
-
-4. Run the app
-
-```bash
-if good, follow-up
-  else
- retry yourself
-```
-
-5. Go see my work in Heroku : https://eventbritelikeee.herokuapp.com/
-
-```bash
-wp m8 <3
-```
-🌟 You are all set!
+## Crédit 🔗
+[Selim RAMDANI](https://github.com/curlyroots)<br>
